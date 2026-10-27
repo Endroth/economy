@@ -1,0 +1,45 @@
+name: Economia
+version: 1.0.0
+main: br.economia.EconomiaPlugin
+api-version: '1.21'
+description: Economia com venda de itens, loja editavel e ranking
+
+commands:
+  saldo:
+    description: Ver seu saldo
+    aliases: [money, bal, balance]
+    usage: /saldo [jogador]
+  pagar:
+    description: Enviar dinheiro para outro jogador
+    aliases: [pay]
+    usage: /pagar <jogador> <valor>
+  rank:
+    description: Jogadores mais ricos
+    aliases: [baltop]
+    usage: /rank
+  vender:
+    description: Abre o bau de venda
+    aliases: [sell]
+    usage: /vender
+  preco:
+    description: Ver o preco do item na mao
+    aliases: [price]
+    usage: /preco
+  precos:
+    description: Lista de precos
+    usage: /precos [pagina]
+  setpreco:
+    description: Define o preco de venda de um item (admin)
+    usage: /setpreco [item] <valor|remover>
+  eco:
+    description: Comandos de admin da economia
+    usage: /eco <give|take|set|reload>
+  loja:
+    description: Abre a loja
+    aliases: [shop]
+    usage: /loja
+
+permissions:
+  economia.admin:
+    description: Acesso aos comandos de admin da economia
+    default: op

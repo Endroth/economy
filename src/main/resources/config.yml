@@ -1,0 +1,8 @@
+# Simbolo mostrado antes do valor
+simbolo: "$"
+
+# Dinheiro que o jogador recebe ao entrar pela primeira vez
+saldo-inicial: 100
+
+# Prefixo das mensagens (aceita cores com &)
+prefixo: "&6[Economia] &f"
